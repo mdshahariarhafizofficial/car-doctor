@@ -1,29 +1,31 @@
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import React from 'react';
 
 const Navbar = () => {
-
+  const pathname = usePathname();
   const navLinks = <>
     <li>
-      <Link href={""}>Home</Link>
+      <Link href={"/"} className={pathname === "/" ? "active-link" : 'inactive-link'}>Home</Link>
     </li>
     <li>
-      <Link href={""}>About</Link>
+      <Link href={"/about"} className={pathname === "/about" ? "active-link" : 'inactive-link'}>About</Link>
     </li>
     <li>
-      <Link href={""}>Services</Link>
+      <Link href={"/services"} className={pathname === "/services" ? "active-link" : 'inactive-link'}>Services</Link>
     </li>
     <li>
-      <Link href={""}>Blog</Link>
+      <Link href={"/blog"} className={pathname === "/blog" ? "active-link" : 'inactive-link'}>Blog</Link>
     </li>
     <li>
-      <Link href={""}>Contact</Link>
+      <Link href={"/contact"} className={pathname === "/contact" ? "active-link" : 'inactive-link'}>Contact</Link>
     </li>
   </>
 
     return (
-<div className="max-w-[1140px] mx-auto navbar ">
+<div className="max-w-[1140px] mx-auto navbar py-5">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -40,7 +42,7 @@ const Navbar = () => {
     </Link>
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1">
+    <ul className="menu menu-horizontal px-1 space-x-4 font-semibold">
       {navLinks}
     </ul>
   </div>

@@ -1,2 +1,9 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+.active-link{
+    color: #FF3811;
+    font-weight: bold;
+    border-bottom: 2px solid;
+    border-radius: 0;
+}
