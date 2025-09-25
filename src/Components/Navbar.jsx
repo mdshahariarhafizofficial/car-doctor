@@ -3,6 +3,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React from 'react';
+import { IoIosSearch } from "react-icons/io";
+import { SlHandbag } from "react-icons/sl";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -46,7 +48,9 @@ const Navbar = () => {
       {navLinks}
     </ul>
   </div>
-  <div className="navbar-end">
+  <div className="navbar-end space-x-4 items-center">
+    <SlHandbag size={18} />
+    <IoIosSearch size={22} />
     <button className='btn btn-outline text-[#FF3811] rounded'>Appointment</button>
   </div>
 </div>
