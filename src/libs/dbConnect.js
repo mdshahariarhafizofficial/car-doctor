@@ -13,3 +13,5 @@ const dbConnect = (collectionName) => {
 
     return client.db(process.env.DB_NAME).collection(collectionName)
 }
+
+export default dbConnect;
