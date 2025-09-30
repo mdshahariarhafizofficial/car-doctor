@@ -1,4 +1,5 @@
 import AboutUs from "@/Components/AboutUs";
+import CtaSection from "@/Components/CtaSection";
 import HeroSlider from "@/Components/HeroSlider";
 import Services from "@/Components/Services";
 
@@ -8,6 +9,7 @@ export default function Home() {
       <HeroSlider></HeroSlider>
       <AboutUs></AboutUs>
       <Services></Services>
+      <CtaSection></CtaSection>
     </>
   );
 }
