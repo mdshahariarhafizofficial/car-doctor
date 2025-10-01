@@ -1,3 +1,4 @@
+import PageTopSection from '@/Components/PageTopSection';
 import dbConnect from '@/libs/dbConnect';
 import { ObjectId } from 'mongodb';
 import React from 'react';
@@ -9,7 +10,7 @@ const page = async ({params}) => {
         
     return (
         <div>
-            {JSON.stringify(serviceDetails)}
+            <PageTopSection title={"Service Details"} path={"Service Details"}></PageTopSection>
         </div>
     );
 };
