@@ -3,6 +3,7 @@ import SectionText from './SectionText';
 import dbConnect from '@/libs/dbConnect';
 import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
 const Services = async () => {
     const allServices = await dbConnect("services").find({}).limit(6).toArray();
@@ -31,9 +32,9 @@ const Services = async () => {
                                     <h3 className='text-lg font-semibold'>
                                         Price: $ {service.price}
                                     </h3>
-                                    <button className="">
+                                    <Link href={`/services/${service._id}`}>
                                         <ArrowRight className='text-primary'></ArrowRight>
-                                    </button>
+                                    </Link>
                                     </div>
                                 </div>
                                 </div>                               
