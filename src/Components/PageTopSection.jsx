@@ -5,7 +5,7 @@ import React from 'react';
 const PageTopSection = ({title, path}) => {
     return (
     <div className="max-w-[1140px] mx-auto my-5 px-5 lg:px-0">
-      <div className="relative w-full h-[220px] rounded-lg overflow-hidden">
+      <div className="relative w-full h-[300px] rounded-lg overflow-hidden">
         {/* Background Image */}
         <Image
           src="/assets/images/banner/4.jpg"
