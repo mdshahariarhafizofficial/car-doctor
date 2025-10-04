@@ -91,6 +91,26 @@ const page = async ({params}) => {
                                     </div>                        
                     </div>                   
 
+
+                    {/* Quote */}
+                    <div className='bg-black p-10 space-y-4 rounded-lg flex flex-col justify-center items-center'>
+                        <Image src={"/assets/icons/logowhite.svg"} width={500} height={500} alt='logo' className='w-[100px] object-cover'></Image>
+                        <h2 className='text-xl font-semibold text-white text-center'>Need Help? We Are Here
+                        To Help You</h2>  
+                        <div className='relative bg-white py-5 px-10 rounded-lg flex items-center flex-col'>
+                            <p className='font-bold'><span className='text-primary font-bold'>Car Doctor </span>Special</p>
+                            <p className='text-sm font-medium'>Save up to <span className='text-primary'>60% off</span></p>
+                            <button className='absolute -bottom-7 btn btn-primary rounded-lg'>Get A Quote</button>
+                        </div>                  
+                    </div>    
+                    
+                    {/* price */}
+                    <div className='pb-10 space-y-5'>
+                        <h2 className='text-2xl font-bold'>Price $250.00</h2>
+                        <button className='btn w-full btn-primary rounded'>Proceed Checkout</button>
+                    </div>  
+
+
                 </div>
             </div>
 
