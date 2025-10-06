@@ -33,7 +33,7 @@ const LoginForm = () => {
             type="submit"
             className="w-full bg-[#FF3811] hover:bg-[#e0300d] text-white py-3 rounded-md font-medium transition"
           >
-            Sign Up
+            Login
           </button>
         </form>
 
