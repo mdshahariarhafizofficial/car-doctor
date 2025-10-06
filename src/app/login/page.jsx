@@ -1,7 +1,6 @@
-import RegisterForm from '@/Components/RegisterForm';
+import LoginForm from '@/Components/LoginForm';
 import Image from 'next/image';
 import React from 'react';
-import { FaFacebookF, FaLinkedinIn, FaGoogle } from "react-icons/fa";
 
 const page = () => {
   return (
@@ -18,7 +17,7 @@ const page = () => {
       </div>
 
       {/* Right Form Card */}
-      <RegisterForm></RegisterForm>
+      <LoginForm></LoginForm>
 
     </div>
   );
